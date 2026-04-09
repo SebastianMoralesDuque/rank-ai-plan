@@ -1,0 +1,149 @@
+[
+  {
+    "plan_name": "Hobby",
+    "monthly_price": 0.0,
+    "offers": "No credit card required; limited Agent requests; limited Tab completions.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Pro",
+    "monthly_price": 20.0,
+    "offers": "Everything in Hobby plus extended limits on Agent i, access to frontier models, MCPs, skills, hooks, and cloud agents.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Pro+",
+    "monthly_price": 60.0,
+    "offers": "Everything in Pro plus 3x usage on all OpenAI, Claude, and Gemini models.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Ultra",
+    "monthly_price": 200.0,
+    "offers": "Everything in Pro plus 20x usage on all OpenAI, Claude, and Gemini models; priority access to new features.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Teams",
+    "monthly_price": 40.0,
+    "offers": "Everything in Pro plus shared chats, commands, and rules; centralized team billing; usage analytics and reporting; org-wide privacy mode controls; role-based access control; SAML/OIDC SSO.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Enterprise",
+    "monthly_price": 0.0,
+    "offers": "Everything in Teams plus pooled usage; invoice/PO billing; SCIM seat management; AI code tracking API and audit logs; granular admin and model controls; priority support and account management.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Bugbot Pro",
+    "monthly_price": 40.0,
+    "offers": "14 day individual trial; reviews on up to 200 PRs/mo; access to Bugbot rules.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Bugbot Teams",
+    "monthly_price": 40.0,
+    "offers": "Everything in Bugbot Pro plus 14-day team trial; code reviews on all PRs; analytics and reporting dashboard; advanced rules and settings.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Bugbot Enterprise",
+    "monthly_price": 0.0,
+    "offers": "30-day org-wide trial; advanced analytics and reporting; priority support and account management.",
+    "tool_name": "Cursor",
+    "url": "https://www.cursor.com/pricing"
+  },
+  {
+    "plan_name": "Free",
+    "monthly_price": 0.0,
+    "offers": "Includes 50 premium requests (agent mode/chat) per month, 2,000 completions per month, Copilot CLI, MCP server integration, and custom instructions. Access to models including Haiku 4.5 and GPT-5 mini.",
+    "tool_name": "Github",
+    "url": "https://github.com/features/copilot/plans"
+  },
+  {
+    "plan_name": "Pro",
+    "monthly_price": 10.0,
+    "offers": "Everything in Free plus: 300 premium requests per month, unlimited agent mode/chats with GPT-5 mini, unlimited inline suggestions, Copilot cloud agent, code review, app modernization for Java/.NET, and access to models from Anthropic, Google, and OpenAI.",
+    "tool_name": "Github",
+    "url": "https://github.com/features/copilot/plans"
+  },
+  {
+    "plan_name": "Pro+",
+    "monthly_price": 39.0,
+    "offers": "Everything in Pro plus: 1,500 premium requests per month, access to GitHub Spark, delegation tasks to 3rd party agents (Claude/OpenAI Codex), and full access to all models including Claude Opus 4.6.",
+    "tool_name": "Github",
+    "url": "https://github.com/features/copilot/plans"
+  },
+  {
+    "plan_name": "Free",
+    "monthly_price": 0.0,
+    "offers": "Light quota for agent coding, limited model availability, unlimited inline edits, and unlimited Tab completions.",
+    "tool_name": "Windsurf",
+    "url": "https://windsurf.ai/pricing"
+  },
+  {
+    "plan_name": "Pro",
+    "monthly_price": 20.0,
+    "offers": "All Free features plus increased quotas, access to frontier models (OpenAI, Claude, Gemini), full model availability, and option to purchase extra usage at API pricing.",
+    "tool_name": "Windsurf",
+    "url": "https://windsurf.ai/pricing"
+  },
+  {
+    "plan_name": "Max",
+    "monthly_price": 200.0,
+    "offers": "All Pro features plus significantly higher usage quotas.",
+    "tool_name": "Windsurf",
+    "url": "https://windsurf.ai/pricing"
+  },
+  {
+    "plan_name": "Teams",
+    "monthly_price": 40.0,
+    "offers": "All Pro features plus centralized billing, admin dashboard with analytics, priority support, and automated zero data retention.",
+    "tool_name": "Windsurf",
+    "url": "https://windsurf.ai/pricing"
+  },
+  {
+    "plan_name": "Enterprise",
+    "monthly_price": 0.0,
+    "offers": "All Teams features plus highest priority support, dedicated account management, Role-Based Access Control (RBAC), SSO, and hybrid deployment options.",
+    "tool_name": "Windsurf",
+    "url": "https://windsurf.ai/pricing"
+  },
+  {
+    "plan_name": "Free Go",
+    "monthly_price": 0.0,
+    "offers": "Access to Big Pickle and free models.",
+    "tool_name": "Opencode",
+    "url": "https://opencode.ai/go"
+  },
+  {
+    "plan_name": "Go",
+    "monthly_price": 10.0,
+    "offers": "Includes GLM-5.1, GLM-5, Kimi K2.5, MiMo-V2-Pro, MiMo-V2-Omni, MiniMax M2.5, and MiniMax M2.7. Compatible with any agent. Features a $5 first-month introductory rate. Supports credit top-ups.",
+    "tool_name": "Opencode",
+    "url": "https://opencode.ai/go"
+  },
+  {
+    "plan_name": "Token plan",
+    "monthly_price": 0.0,
+    "offers": "Cost-effective token package tailored for developers.",
+    "tool_name": "Minimax",
+    "url": "https://www.minimax.io/developer"
+  },
+  {
+    "plan_name": "Unlimited Monthly Plan",
+    "monthly_price": 0.0,
+    "offers": "Top model production-ready delivery, unlimited monthly usage, and one-click integration with leading developer tools.",
+    "tool_name": "Minimax",
+    "url": "https://www.minimax.io/developer"
+  }
+]
