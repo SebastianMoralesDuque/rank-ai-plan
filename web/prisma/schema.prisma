@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./dev.db"
+  url      = env("DATABASE_URL")
 }
 
 model AiPlan {
@@ -12,9 +12,22 @@ model AiPlan {
   toolName       String
   planName       String
   monthlyPrice   Float
-  offers         String
-  url            String?  @default("")
+  isFree         Boolean  @default(false)
+  
+  primaryModel   String?
+  models         String?  // JSON array: ["claude-4.6-opus", "claude-4.6-sonnet"]
+  
+  offers         String   @default("")
+  restrictions   String?  // What this plan does NOT include
+  usageLimits    String?
+  
+  url            String?
   lastUpdated    DateTime @default(now()) @updatedAt
+  source         String   @default("scraper")
 
   @@unique([toolName, planName])
+  @@index([toolName])
+  @@index([monthlyPrice])
+  @@index([isFree])
+  @@index([source])
 }

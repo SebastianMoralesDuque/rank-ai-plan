@@ -2,221 +2,220 @@ import os
 import json
 import asyncio
 import re
+from typing import Optional, Dict, Any, List
+from dataclasses import dataclass, asdict
 from datetime import datetime
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
-from ollama import Client
-from sqlalchemy import create_engine, Column, String, Float, JSON, UniqueConstraint, DateTime, text
-from sqlalchemy.orm import sessionmaker, declarative_base
 
 load_dotenv()
 
-DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///../web/prisma/dev.db')
 OLLAMA_API_KEY = os.environ.get('OLLAMA_API_KEY')
+OLLAMA_HOST = os.environ.get('OLLAMA_HOST', 'https://ollama.com')
 
-engine = create_engine(DATABASE_URL)
-Base = declarative_base()
+TOOL_MAPPINGS = {
+    'cursor.com': {'name': 'Cursor', 'type': 'ide'},
+    'github.com': {'name': 'GitHub Copilot', 'type': 'ide'},
+    'windsurf.ai': {'name': 'Windsurf', 'type': 'ide'},
+    'anthropic.com': {'name': 'Claude', 'type': 'ide'},
+    'opencode.ai': {'name': 'Opencode', 'type': 'ide'},
+    'minimax.io': {'name': 'Minimax', 'type': 'ide'},
+}
 
-class AiPlan(Base):
-    __tablename__ = 'AiPlan'
-    id = Column(String, primary_key=True)
-    toolName = Column(String, nullable=False)
-    planName = Column(String, nullable=False)
-    monthlyPrice = Column(Float, nullable=False)
-    offers = Column(String, nullable=False)
-    url = Column(String, nullable=True)
-    lastUpdated = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+@dataclass
+class Plan:
+    tool_name: str
+    plan_name: str
+    monthly_price: float
+    offers: str
+    url: str
+    source: str = 'scraper'
 
-    __table_args__ = (UniqueConstraint('toolName', 'planName', name='_tool_plan_uc'),)
+class SimpleScraper:
+    def __init__(self):
+        self.plans: List[Plan] = []
+        self.ollama_client = None
+        
+        if OLLAMA_API_KEY:
+            try:
+                from ollama import Client
+                self.ollama_client = Client(
+                    host=OLLAMA_HOST,
+                    headers={'Authorization': f'Bearer {OLLAMA_API_KEY}'}
+                )
+            except ImportError:
+                print("Warning: ollama package not installed, using fallback parser")
 
-Session = sessionmaker(bind=engine)
+    async def scrape_url(self, browser, url: str) -> Optional[str]:
+        page = await browser.new_page()
+        try:
+            print(f"  Scraping: {url}")
+            await page.goto(url, wait_until="networkidle", timeout=60000)
+            content = await page.content()
+            soup = BeautifulSoup(content, 'html.parser')
+            
+            for s in soup(["script", "style", "meta", "link", "header", "footer", "nav", "noscript"]):
+                s.decompose()
+            
+            text = soup.get_text(separator=' ', strip=True)
+            text = re.sub(r'\s+', ' ', text)
+            return text[:12000]
+        except Exception as e:
+            print(f"  Error: {e}")
+            return None
+        finally:
+            await page.close()
 
-client = None
-if OLLAMA_API_KEY:
-    client = Client(
-        host="https://ollama.com",
-        headers={'Authorization': 'Bearer ' + OLLAMA_API_KEY}
-    )
+    def extract_with_llm(self, text: str, tool_name: str) -> Optional[List[Dict]]:
+        if not self.ollama_client:
+            return None
+            
+        prompt = f"""Extract pricing plans from this text for {tool_name}.
+Return ONLY a valid JSON array with this exact structure:
+[{{"plan_name": "Plan Name", "monthly_price": 20, "offers": "Key features and limits"}}]
 
-async def scrape_url(browser, url):
-    page = await browser.new_page()
-    try:
-        print(f"Scraping {url}...")
-        await page.goto(url, wait_until="networkidle", timeout=60000)
-        content = await page.content()
-        soup = BeautifulSoup(content, 'html.parser')
-        for s in soup(["script", "style", "meta", "link", "header", "footer", "nav"]):
-            s.decompose()
-        text = soup.get_text(separator=' ', strip=True)
-        text = re.sub(r'\s+', ' ', text)
-        return text[:10000]
-    except Exception as e:
-        print(f"Error scraping {url}: {e}")
-        return None
-    finally:
-        await page.close()
+Focus on: plan name, price in USD/month, main features and usage limits.
+Text: {text[:8000]}"""
 
-def sanitize_string(s):
-    if not s:
-        return ""
-    if not isinstance(s, str):
-        s = str(s)
-    # Remove null bytes and non-printable control characters
-    return re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]', '', s)
+        try:
+            response = self.ollama_client.generate(
+                model='qwen2.5-coder:14b',
+                prompt=prompt,
+                options={'temperature': 0.1}
+            )
+            response_text = response['response'].strip()
+            response_text = re.sub(r'^```json\s*|\s*```$', '', response_text, flags=re.MULTILINE)
+            return json.loads(response_text)
+        except Exception as e:
+            print(f"  LLM extraction error: {e}")
+            return None
 
-def normalize_price(price):
-    if price is None:
-        return 0.0
-    s = str(price).lower().strip()
-    if 'free' in s or s == '0' or s == '0.0':
-        return 0.0
-    # Extract numbers including decimals
-    nums = re.findall(r"[-+]?\d*\.\d+|\d+", s)
-    if nums:
-        return float(nums[0])
-    return 0.0
-
-def normalize_offers(offers):
-    if not offers:
-        return "Not specified"
-    
-    sanitized = []
-    if isinstance(offers, list):
-        for item in offers:
-            sanitized.append(sanitize_string(item))
-        return "; ".join(sanitized)
-    
-    return sanitize_string(offers)
-
-def extract_plans(data):
-    plans = []
-    if data is None:
+    def extract_with_regex(self, text: str, url: str) -> List[Dict]:
+        plans = []
+        tool_name = TOOL_MAPPINGS.get(url.split('//')[1].split('/')[0], {}).get('name', 'Unknown')
+        
+        price_patterns = [
+            r'\$?\s*(\d+(?:\.\d{2})?)\s*(?:/mo|/month|/monthly)?',
+            r'(\d+(?:\.\d{2})?)\s*dollars?\s*(?:per\s*)?(?:month|mo)',
+        ]
+        
+        price_matches = []
+        for pattern in price_patterns:
+            matches = re.findall(pattern, text.lower())
+            for match in matches:
+                price = float(match)
+                if 0 < price <= 100:
+                    price_matches.append(price)
+        
+        plan_names = re.findall(r'(?:plan|tier|subscription|option)\s*:?\s*([A-Za-z0-9\s+\-]+?)(?:\s*\d|\s*\$|\s*,|\s*\n|$)', text, re.IGNORECASE)
+        
+        if price_matches:
+            unique_prices = list(dict.fromkeys(price_matches))[:3]
+            for i, price in enumerate(unique_prices):
+                plan_name = plan_names[i].strip() if i < len(plan_names) else f"Plan {i+1}"
+                plans.append({
+                    'plan_name': re.sub(r'[^a-zA-Z0-9\s\-+]', '', plan_name) or f"Plan {i+1}",
+                    'monthly_price': price,
+                    'offers': f'${price}/month subscription'
+                })
+        
+        if not plans:
+            plans.append({
+                'plan_name': 'Standard',
+                'monthly_price': 0,
+                'offers': 'Pricing not available'
+            })
+        
         return plans
-    if isinstance(data, list):
-        for item in data:
-            plans.extend(extract_plans(item))
-        return plans
-    if isinstance(data, dict):
-        if 'plans' in data:
-            for plan in data['plans']:
-                plan['tool_name'] = data.get('tool_name', 'Unknown')
-                plans.append(plan)
-        elif 'plan_name' in data:
-            plans.append(data)
-    return plans
 
-def extract_data_with_llm(raw_text, tool_name_hint=""):
-    if not client:
-        print(f"ERROR: No API Key provided")
-        return None
+    def normalize_price(self, price: Any) -> float:
+        if price is None:
+            return 0
+        if isinstance(price, (int, float)):
+            return float(price)
+        s = str(price).lower().strip()
+        if 'free' in s or s in ['0', '0.0', '']:
+            return 0
+        match = re.search(r'[-+]?\d*\.?\d+', s)
+        return float(match.group()) if match else 0
 
-    prompt = (
-        "Extract the following data from this AI tool pricing page text. "
-        "Act as a data extractor and return ONLY a valid JSON array of plans. "
-        "Each plan should have exactly these keys: plan_name, monthly_price, \"offers\": \"Description of everything the plan includes, including key features and usage/request limits\" "
-        "If no usage limits are explicitly found, describe the main features. Focus on making the 'offers' text clear and concise for a programmer. "
-        f"\n\nText: {raw_text}"
-    )
-
-    try:
-        response = client.generate(model='gemma4:31b-cloud', prompt=prompt)
-        response_text = re.sub(r'^```json\s*|\s*```$', '', response['response'].strip(), flags=re.MULTILINE)
-        return json.loads(response_text)
-    except Exception as e:
-        print(f"Error with LLM extraction: {e}")
-        return None
-
-def upsert_plan(session, data):
-    tool_name = data.get('tool_name') or 'Unknown'
-    plan_name = data.get('plan_name') or 'Unknown'
-    
-    query = f"INSERT INTO AiPlan (id, toolName, planName, monthlyPrice, offers, url, lastUpdated) " \
-            f"VALUES (:id, :toolName, :planName, :monthlyPrice, :offers, :url, :lastUpdated) " \
-            f"ON CONFLICT(toolName, planName) DO UPDATE SET " \
-            f"monthlyPrice=excluded.monthlyPrice, offers=excluded.offers, url=excluded.url, " \
-            f"lastUpdated=excluded.lastUpdated"
-    
-    session.execute(text(query), {
-        'id': data.get('id', f"{tool_name.lower()}-{plan_name.lower()}"),
-        'toolName': tool_name,
-        'planName': plan_name,
-        'monthlyPrice': normalize_price(data.get('monthly_price')),
-        'offers': normalize_offers(data.get('offers')),
-        'url': data.get('url', ''),
-        'lastUpdated': datetime.utcnow()
-    })
-    print(f"  Upserted: {tool_name} - {plan_name}")
-
-async def main():
-    if not client:
-        print("ERROR: OLLAMA_API_KEY not configured")
-        return
-
-    with open("urls.txt", "r") as f:
-        urls = [line.strip() for line in f if line.strip()]
-
-    Base.metadata.create_all(engine)
-    
-    all_plans = []
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        for url in urls:
-            raw_text = await scrape_url(browser, url)
-            if raw_text:
-                domain = url.split('//')[-1].split('/')[0]
-                tool_name = domain.split('.')[-2].capitalize() if '.' in domain else domain
-
-                data = extract_data_with_llm(raw_text, tool_name_hint=f"Updated {tool_name}")
-                if data:
-                    plans = extract_plans(data)
-                    print(f"  Found {len(plans)} plans for {tool_name}")
-                    
-                    session = Session()
-                    try:
-                        for plan in plans:
-                            plan['tool_name'] = plan.get('tool_name') or tool_name
-                            plan['monthly_price'] = normalize_price(plan.get('monthly_price'))
-                            plan['url'] = url
-                            upsert_plan(session, plan)
-                            all_plans.append(plan)
-                        session.commit()
-                    except Exception as e:
-                        print(f"  Error: {e}")
-                        session.rollback()
-                    finally:
-                        session.close()
-        await browser.close()
-
-    with open("results.json", "w") as f:
-        json.dump(all_plans, f, indent=2)
-    print(f"\nScraper finished. Saved {len(all_plans)} plans to results.json")
-
-    print("\n" + "="*50)
-    print("Syncing to web database...")
-    print("="*50)
-
-    import shutil
-    import subprocess
-
-    web_results_path = "../web/results.json"
-    shutil.copy("results.json", web_results_path)
-    print(f"  Copied results.json to {web_results_path}")
-
-    sync_script = "../web/prisma/sync.ts"
-    try:
-        result = subprocess.run(
-            ["npx", "tsx", sync_script],
-            cwd="../web",
-            capture_output=True,
-            text=True
+    def create_plan(self, data: Dict, tool_name: str, url: str) -> Plan:
+        return Plan(
+            tool_name=tool_name,
+            plan_name=data.get('plan_name', 'Unknown'),
+            monthly_price=self.normalize_price(data.get('monthly_price')),
+            offers=data.get('offers', 'Not specified'),
+            url=url,
+            source='scraper'
         )
-        if result.returncode == 0:
-            print("  ✓ Sync completed successfully")
-        else:
-            print(f"  ✗ Sync failed: {result.stderr}")
-    except Exception as e:
-        print(f"  ✗ Sync error: {e}")
 
-if __name__ == "__main__":
-    asyncio.run(main())
+    async def scrape_all(self, urls: List[str]) -> List[Plan]:
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            
+            for url in urls:
+                if not url.strip():
+                    continue
+                
+                domain = url.split('//')[1].split('/')[0]
+                tool_info = TOOL_MAPPINGS.get(domain, {'name': domain.split('.')[-1].capitalize()})
+                tool_name = tool_info['name']
+                
+                print(f"\nProcessing: {tool_name}")
+                
+                raw_text = await self.scrape_url(browser, url)
+                if not raw_text:
+                    continue
+                
+                data = self.extract_with_llm(raw_text, tool_name)
+                
+                if not data:
+                    print("  Using fallback regex parser")
+                    data = self.extract_with_regex(raw_text, url)
+                
+                if data:
+                    for item in data:
+                        plan = self.create_plan(item, tool_name, url)
+                        self.plans.append(plan)
+                        print(f"    ✓ {plan.plan_name}: ${plan.monthly_price}")
+            
+            await browser.close()
+        
+        return self.plans
+
+def main():
+    urls_file = 'urls.txt'
+    output_file = 'results.json'
+    
+    if not os.path.exists(urls_file):
+        print(f"Error: {urls_file} not found")
+        return
+    
+    with open(urls_file, 'r') as f:
+        urls = [line.strip() for line in f if line.strip()]
+    
+    if not urls:
+        print("No URLs found")
+        return
+    
+    print("=" * 50)
+    print("DevAI Rank Scraper (Fallback Mode)")
+    print("=" * 50)
+    print(f"URLs: {len(urls)}")
+    
+    scraper = SimpleScraper()
+    plans = asyncio.run(scraper.scrape_all(urls))
+    
+    with open(output_file, 'w') as f:
+        json.dump([asdict(p) for p in plans], f, indent=2)
+    
+    print("\n" + "=" * 50)
+    print(f"Done! Scraped {len(plans)} plans")
+    print(f"Saved to: {output_file}")
+    print("=" * 50)
+    
+    print("\nNext: Run 'npx tsx prisma/sync.ts' in web/ to sync data")
+
+if __name__ == '__main__':
+    main()

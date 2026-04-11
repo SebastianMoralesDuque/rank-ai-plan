@@ -1,6 +1,21 @@
+# Global Providers
 https://www.cursor.com/pricing
 https://github.com/features/copilot/plans
-https://windsurf.ai/pricing
 https://www.anthropic.com/claude/pro
+https://chat.openai.com/api/auth/subscription
+https://windsurf.ai/pricing
 https://opencode.ai/go
-https://www.minimax.io/developer
+
+# Gemini (Consumer + Developer)
+https://one.google.com/about/plans
+https://cloud.google.com/vertex-ai/pricing
+
+# Chinese Providers
+https://platform.deepseek.com/price
+https://bailian.console.aliyun.com
+https://platform.minimax.io/subscribe/token-plan
+https://bigmodel.cn/pricing
+https://kimi.moonshot.cn/pricing
+
+# Ollama
+https://ollama.com/pricing

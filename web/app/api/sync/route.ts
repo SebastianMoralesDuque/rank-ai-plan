@@ -1,3 +1,4 @@
+import { NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -18,7 +19,7 @@ interface ScrapedPlan {
 }
 
 async function loadScraperResults(): Promise<ScrapedPlan[]> {
-  const resultsPath = path.join(__dirname, '../../scraper/results.json');
+  const resultsPath = path.join(process.cwd(), '../scraper/results.json');
   
   try {
     if (!fs.existsSync(resultsPath)) {
@@ -39,7 +40,7 @@ async function loadScraperResults(): Promise<ScrapedPlan[]> {
 }
 
 async function loadSeedData(): Promise<ScrapedPlan[]> {
-  const seedPath = path.join(__dirname, './seed.json');
+  const seedPath = path.join(process.cwd(), 'prisma/seed.json');
   
   try {
     const content = fs.readFileSync(seedPath, 'utf-8');
@@ -94,7 +95,7 @@ async function syncPlans(plans: ScrapedPlan[], source: 'scraper' | 'seed'): Prom
       });
       synced++;
     } catch (error) {
-      console.error(`  Error upserting ${plan.toolName} - ${plan.planName}`);
+      console.error(`Error upserting ${plan.toolName} - ${plan.planName}`);
     }
   }
   
@@ -122,60 +123,56 @@ async function cleanupOrphanPlans(currentPlanIds: string[]): Promise<number> {
   return result.count;
 }
 
-async function main() {
-  console.log('='.repeat(60));
-  console.log('DevAI Rank - Data Sync');
-  console.log('='.repeat(60));
-  
-  let plans: ScrapedPlan[];
-  let dataSource: 'scraper' | 'seed';
-  
-  console.log('\n[Step 1/3] Loading data...');
-  
-  plans = await loadScraperResults();
-  
-  if (plans.length > 0) {
-    dataSource = 'scraper';
-    console.log(`  Using scraper data: ${plans.length} plans`);
-  } else {
-    console.log('  Scraper results empty, falling back to seed data...');
-    plans = await loadSeedData();
-    dataSource = 'seed';
+export async function GET() {
+  try {
+    console.log('Starting data sync...');
     
-    if (plans.length === 0) {
-      console.error('ERROR: No data available. Exiting.');
-      process.exit(1);
+    let plans = await loadScraperResults();
+    let dataSource: 'scraper' | 'seed';
+    
+    if (plans.length > 0) {
+      dataSource = 'scraper';
+      console.log(`Using scraper data: ${plans.length} plans`);
+    } else {
+      plans = await loadSeedData();
+      dataSource = 'seed';
+      console.log(`Using seed data: ${plans.length} plans`);
+      
+      if (plans.length === 0) {
+        return NextResponse.json({
+          success: false,
+          error: 'No data available',
+          message: 'Both scraper and seed data failed',
+        });
+      }
     }
     
-    console.log(`  Using seed data: ${plans.length} plans`);
-  }
-  
-  console.log('\n[Step 2/3] Syncing plans to database...');
-  
-  const synced = await syncPlans(plans, dataSource);
-  console.log(`  Synced ${synced} plans`);
-  
-  if (dataSource === 'scraper') {
-    console.log('\n[Step 3/3] Cleaning up orphaned plans...');
-    const planIds = plans.map(p => `${p.toolName}-${p.planName}`);
-    const removed = await cleanupOrphanPlans(planIds);
-    console.log(`  Removed ${removed} orphaned plans`);
-  } else {
-    console.log('\n[Step 3/3] Skipping orphan cleanup (using seed data)');
-  }
-  
-  const totalPlans = await prisma.aiPlan.count();
-  
-  console.log('\n' + '='.repeat(60));
-  console.log(`Sync complete!`);
-  console.log(`  - Source: ${dataSource}`);
-  console.log(`  - Plans synced: ${synced}`);
-  console.log(`  - Total plans in DB: ${totalPlans}`);
-  console.log('='.repeat(60));
-}
+    const synced = await syncPlans(plans, dataSource);
+    
+    if (dataSource === 'scraper') {
+      const planIds = plans.map(p => `${p.toolName}-${p.planName}`);
+      await cleanupOrphanPlans(planIds);
+    }
+    
+    const totalPlans = await prisma.aiPlan.count();
+    
+    console.log(`Sync complete: ${synced} plans synced, ${totalPlans} total`);
+    
+    return NextResponse.json({
+      success: true,
+      source: dataSource,
+      plansSynced: synced,
+      totalPlans,
+    });
 
-main()
-  .catch(console.error)
-  .finally(async () => {
+  } catch (error) {
+    console.error('Sync error:', error);
+    return NextResponse.json({
+      success: false,
+      error: 'Sync failed',
+      details: String(error),
+    });
+  } finally {
     await prisma.$disconnect();
-  });
+  }
+}

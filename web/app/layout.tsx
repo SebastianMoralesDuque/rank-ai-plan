@@ -1,20 +1,16 @@
 import type { Metadata } from 'next';
-import { Outfit, Sora } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 
-const outfit = Outfit({ 
+const inter = Inter({ 
   subsets: ['latin'],
-  variable: '--font-outfit',
-});
-
-const sora = Sora({ 
-  subsets: ['latin'],
-  variable: '--font-sora',
+  variable: '--font-inter',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'DevAI Rank - El Directorio Definitivo de IA para Programadores',
-  description: 'Comparador de planes premium de IA (Cursor, Copilot, Claude) para desarrolladores.',
+  title: 'DevAI Rank - AI Plans Ranked for Developers',
+  description: 'Compare and rank the best AI subscription plans (Cursor, Copilot, Claude, and more) by value.',
 };
 
 export default function RootLayout({
@@ -23,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${outfit.variable} ${sora.variable}`}>
-      <body className={`${sora.className} antialiased bg-black text-white`}>{children}</body>
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans antialiased bg-black text-white">{children}</body>
     </html>
   );
 }
