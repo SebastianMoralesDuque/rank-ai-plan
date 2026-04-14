@@ -43,5 +43,5 @@ python focalizado.py
 
 ## Deploy
 
-- **Live Demo:** http://airank.sebastianmorales.sbs/
+- **Live Demo:** https://ai-rank.sebastianmorales.sbs
 - **Repo:** https://github.com/SebastianMoralesDuque/rank-ai-plan
