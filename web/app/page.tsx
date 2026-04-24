@@ -130,16 +130,22 @@ async function getPlans() {
   });
 }
 
+export const dynamic = 'force-dynamic';
+
 export default async function HomePage() {
   const plans = await getPlans();
   
-  const lastUpdate = plans[0]?.lastUpdated 
-    ? new Intl.DateTimeFormat('en-US', { 
-        month: 'short', 
+  const mostRecentUpdate = plans.length > 0
+    ? new Date(Math.max(...plans.map(p => p.lastUpdated.getTime())))
+    : null;
+
+  const lastUpdate = mostRecentUpdate
+    ? new Intl.DateTimeFormat('en-US', {
+        month: 'short',
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit'
-      }).format(plans[0].lastUpdated)
+      }).format(mostRecentUpdate)
     : 'Unknown';
 
   return (
