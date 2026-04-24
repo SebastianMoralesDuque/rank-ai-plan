@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - '3000'
+    environment:
+      NODE_ENV: production
+      PORT: '3000'
+      HOST: '0.0.0.0'
+      DATABASE_URL: ${DATABASE_URL}
+      OLLAMA_API_KEY: ${OLLAMA_API_KEY}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-minimax-m2.7:cloud}
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.airank.rule=Host(`ai-rank.sebastianmorales.sbs`)
+      - traefik.http.routers.airank.entryPoints=http,https
+      - traefik.http.routers.airank.tls=true
+      - traefik.http.services.airank.loadbalancer.server.port=3000
+    networks:
+      - coolify
+    restart: unless-stopped
+
+networks:
+  coolify:
+    external: true
