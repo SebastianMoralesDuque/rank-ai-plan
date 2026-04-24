@@ -10,11 +10,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN playwright install chromium
 
 # Copy script and URLs
-COPY scraper.py .
+COPY focalizado.py .
 COPY urls.txt .
 
 # Environment variables will be provided by Coolify
 # DATABASE_URL
 # OLLAMA_API_KEY
+# OLLAMA_MODEL
 
-CMD ["python", "scraper.py"]
+CMD ["python", "focalizado.py"]

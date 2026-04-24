@@ -9,6 +9,9 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 import httpx
+from dotenv import load_dotenv
+
+load_dotenv()
 
 OLLAMA_HOST = os.environ.get('OLLAMA_HOST', 'https://ollama.com')
 OLLAMA_API_KEY = os.environ.get('OLLAMA_API_KEY', '')
