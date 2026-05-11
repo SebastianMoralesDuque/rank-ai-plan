@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const inter = Inter({ 
@@ -20,7 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased bg-black text-white">{children}</body>
+      <body className="font-sans antialiased bg-black text-white">
+        {children}
+        <Script 
+          defer 
+          src="http://analytics.sebastianmorales.sbs/js/script.js" 
+          data-website-id="ai-rank"
+        />
+      </body>
     </html>
   );
 }
