@@ -26,7 +26,7 @@ export default function RootLayout({
         <Script 
           defer 
           src="https://analytics.sebastianmorales.sbs/script.js" 
-          data-website-id="ai-rank"
+          data-website-id="4a8011f2-e19c-47fc-89ff-0734cff95989"
         />
       </body>
     </html>
