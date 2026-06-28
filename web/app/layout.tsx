@@ -25,8 +25,8 @@ export default function RootLayout({
         {children}
         <Script 
           defer 
-          src="https://analytics.sebastianmorales.sbs/script.js" 
-          data-website-id="4a8011f2-e19c-47fc-89ff-0734cff95989"
+          src={process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL || "https://analytics.sebastianmorales.sbs/script.js"} 
+          data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || "4a8011f2-e19c-47fc-89ff-0734cff95989"}
         />
       </body>
     </html>

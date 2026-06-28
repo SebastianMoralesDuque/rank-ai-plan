@@ -1,0 +1,5346 @@
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-15T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama failed: Expecting value: line 1 column 1 (char 0)
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 2 plans
+    ✓ Go: $10.0/mo
+    ✓ Free: FREE
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 19 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 19 plans
+
+[Step 2/2] Syncing results to database...
+Synced: 19
+Total in DB: 35
+
+============================================================
+Scraper run complete - 2026-04-15T03:35:21Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-17T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Business: $40.0/mo
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 1 plans
+    ✓ Go: $10.0/mo
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 19 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 3 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 1 plans | glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro, minimax-m2.5
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 19 plans
+
+[Step 2/2] Syncing results to database...
+Synced: 19
+Total in DB: 36
+
+============================================================
+Scraper run complete - 2026-04-17T03:35:52Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-19T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Pro Annual: $15.0/mo
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 1 plans
+    ✓ Go: $10.0/mo
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama extracted 4 plans
+    ✓ Free: FREE
+    ✓ Standard: $20.0/mo
+    ✓ Pro: $50.0/mo
+    ✓ Enterprise: FREE
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 22 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 4 plans | hailuo-2.3, minimax-m2, minimax-m2.5, speech-02
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 1 plans | glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro, minimax-m2.5
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 3 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 22 plans
+
+[Step 2/2] Syncing results to database...
+Synced: 22
+Total in DB: 40
+
+============================================================
+Scraper run complete - 2026-04-19T03:35:09Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-21T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 1 plans
+    ✓ Go: $10.0/mo
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $30.0/mo
+    ✓ Enterprise: $99.0/mo
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama extracted 1 plans
+    ✓ None: FREE
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4, glm-4-flash, glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 3 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 1 plans | glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro, minimax-m2.5
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Error: GLM null 
+Invalid `prisma.aiPlan.upsert()` invocation:
+
+{
+  where: {
+    toolName_planName: {
+      toolName: "GLM",
++     planName: String
+    }
+  },
+  update: {
+    monthlyPrice: 0,
+    isFree: true,
+    primaryModel: "glm-4-flash",
+    models: "[\"glm-4-flash\",\"glm-4\",\"glm-4v-plus\",\"glm-5\",\"glm-5.1\"]",
+    offers: null,
+    restrictions: null,
+    usageLimits: null,
+    url: "https://bigmodel.cn/pricing",
+    lastUpdated: new Date("2026-04-21T03:35:09.434Z"),
+    source: "scraper"
+  },
+  create: {
+    toolName: "GLM",
+    planName: null,
+    monthlyPrice: 0,
+    isFree: true,
+    primaryModel: "glm-4-flash",
+    models: "[\"glm-4-flash\",\"glm-4\",\"glm-4v-plus\",\"glm-5\",\"glm-5.1\"]",
+    offers: null,
+    restrictions: null,
+    usageLimits: null,
+    url: "https://bigmodel.cn/pricing",
+    source: "scraper"
+  }
+}
+
+Argument `planName` must not be null.
+Synced: 19
+Total in DB: 40
+
+============================================================
+Scraper run complete - 2026-04-21T03:35:09Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-23T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $15.0/mo
+    ✓ Enterprise: FREE
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 1 plans
+    ✓ Go: $10.0/mo
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 19 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 1 plans | glm-5, glm-5.1, kimi-k2.5, kimi-k2.6, mimo-v2-omni
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 3 plans | command-r+, gpt-4o
+Scraper generated 19 plans
+
+[Step 2/2] Syncing results to database...
+Synced: 19
+Total in DB: 41
+
+============================================================
+Scraper run complete - 2026-04-23T03:34:58Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-25T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama extracted 1 plans
+    ✓ Free: FREE
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 1 plans
+    ✓ Go: $5.0/mo
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Standard: FREE
+    ✓ AI Studio Pro: $20.0/mo
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama extracted 2 plans
+    ✓ Free: FREE
+    ✓ Pro: $30.0/mo
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 3 plans | gemini-1.5-flash, gemini-1.5-pro, gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 1 plans | glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro, minimax-m2.5
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 1 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Error response from daemon: No such container: airank-web
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-27T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 1 plans
+    ✓ Go: $10.0/mo
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama extracted 3 plans
+    ✓ 免费: FREE
+    ✓ Pro: $49.0/mo
+    ✓ 企业版: $199.0/mo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 1 plans | glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro, minimax-m2.5
+  Qwen: 3 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Error response from daemon: No such container: airank-web
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-04-29T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama extracted 1 plans
+    ✓ Go: $10.0/mo
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama extracted 3 plans
+    ✓ Free: FREE
+    ✓ Pro: $20.0/mo
+    ✓ Max: $100.0/mo
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 3 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 1 plans | glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro, minimax-m2.5
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Error response from daemon: No such container: airank-web
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-01T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 7 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-01T03:34:29Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-03T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-03T03:31:42Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-05T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-05T03:31:45Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-07T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-07T03:31:38Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-09T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.14.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.14.1
+npm notice To update run: npm install -g npm@11.14.1
+npm notice
+
+============================================================
+Scraper run complete - 2026-05-09T03:31:44Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-11T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $60.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-11T03:31:43Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-13T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-13T03:31:42Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-15T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+npm warn exec The following package was not found and will be installed: tsx@4.22.0
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-15T03:31:46Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-17T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 17 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 1 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 17 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+npm warn exec The following package was not found and will be installed: tsx@4.22.1
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 17 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 17 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 2 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 17
+  - Total plans in DB: 30
+============================================================
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.14.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.14.1
+npm notice To update run: npm install -g npm@11.14.1
+npm notice
+
+============================================================
+Scraper run complete - 2026-05-17T03:31:44Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-19T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+npm warn exec The following package was not found and will be installed: tsx@4.22.2
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-19T03:31:39Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-21T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+npm warn exec The following package was not found and will be installed: tsx@4.22.3
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-21T03:31:41Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-23T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-23T03:31:49Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-25T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.15.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.15.0
+npm notice To update run: npm install -g npm@11.15.0
+npm notice
+
+============================================================
+Scraper run complete - 2026-05-25T03:31:38Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-27T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-27T03:31:47Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-29T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-29T03:31:48Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-05-31T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 18 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 1 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 1 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 18 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 18 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 18 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 18
+  - Total plans in DB: 31
+============================================================
+
+============================================================
+Scraper run complete - 2026-05-31T03:31:39Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-01T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $200.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+npm warn exec The following package was not found and will be installed: tsx@4.22.4
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.16.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.16.0
+npm notice To update run: npm install -g npm@11.16.0
+npm notice
+
+============================================================
+Scraper run complete - 2026-06-01T03:31:39Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-03T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-03T03:31:42Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-05T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-05T03:31:39Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-07T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-07T03:31:51Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-09T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.16.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.16.0
+npm notice To update run: npm install -g npm@11.16.0
+npm notice
+
+============================================================
+Scraper run complete - 2026-06-09T03:31:38Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-11T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-11T03:31:42Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-13T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-13T03:31:40Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-15T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-15T03:31:40Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-17T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+============================================================
+Scraper run complete - 2026-06-17T03:31:41Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-19T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen2.5-coder-32b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-19T03:31:42Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-21T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 1 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-21T03:31:41Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-23T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+
+Processing: Cursor
+  Scraping: https://www.cursor.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: GitHub Copilot
+  Scraping: https://github.com/features/copilot/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $70.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Pro: $100.0/mo | gpt-4o, gpt-4o-mini
+    ✓ Free: FREE | gpt-4o, gpt-4o-mini
+
+Processing: Claude
+  Scraping: https://www.anthropic.com/claude/pro
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenAI
+  Scraping: https://chat.openai.com/api/auth/subscription
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gpt-5.4, gpt-4o
+
+Processing: Windsurf
+  Scraping: https://windsurf.ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $40.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Pro: $80.0/mo | claude-4.6-opus, claude-4.6-sonnet
+    ✓ Free: FREE | claude-4.6-opus, claude-4.6-sonnet
+
+Processing: OpenCode
+  Scraping: https://opencode.ai/go
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $10.0/mo | glm-5.1, glm-5
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Gemini
+  Scraping: https://one.google.com/about/plans
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: Gemini API
+  Scraping: https://cloud.google.com/vertex-ai/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | gemini-3.1-pro, gemini-3.1-flash
+
+Processing: DeepSeek
+  Scraping: https://platform.deepseek.com/price
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | deepseek-v3, deepseek-coder-v3
+
+Processing: Qwen
+  Scraping: https://bailian.console.aliyun.com
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | qwen3.0, qwen3.0-turbo
+
+Processing: MiniMax
+  Scraping: https://platform.minimax.io/subscribe/token-plan
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $50.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Pro: $120.0/mo | minimax-m2.7, minimax-m2.5
+    ✓ Free: FREE | minimax-m2.7, minimax-m2.5
+
+Processing: GLM
+  Scraping: https://bigmodel.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Free: FREE | glm-5.1, glm-5
+
+Processing: Kimi
+  Scraping: https://kimi.moonshot.cn/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20/mo | kimi-turbo, moonshot-v1-32k
+
+Processing: Ollama
+  Scraping: https://ollama.com/pricing
+    Ollama error: 403
+    Using regex extraction
+    ✓ Pro: $20.0/mo | minimax-m2.7, qwen3.5
+    ✓ Pro: $100.0/mo | minimax-m2.7, qwen3.5
+    ✓ Free: FREE | minimax-m2.7, qwen3.5
+
+============================================================
+Saved 20 plans to results.json
+============================================================
+Providers: 14
+  Claude: 1 plans | claude-4.5-opus, claude-4.5-sonnet, claude-4.6-opus, claude-4.6-sonnet
+  Cursor: 2 plans | claude-4.6-opus, claude-4.6-sonnet, cursor-small, gpt-4o, gpt-5.2
+  DeepSeek: 1 plans | deepseek-chat-v3, deepseek-coder-v3, deepseek-v3
+  GLM: 1 plans | glm-4v-plus, glm-5, glm-5.1
+  Gemini: 1 plans | gemini-2.5-flash, gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  Gemini API: 1 plans | gemini-2.5-pro, gemini-3.1-flash, gemini-3.1-pro
+  GitHub Copilot: 2 plans | claude-4.5-sonnet, gpt-4o, gpt-4o-mini, o1
+  Kimi: 1 plans | kimi-coder, kimi-turbo, moonshot-v1-32k
+  MiniMax: 2 plans | hailuo-2.3, minimax-m2.5, minimax-m2.7, speech-02
+  Ollama: 2 plans | deepseek-v3.2, devstral-small-2, gemma4, glm-5.1, kimi-k2.5
+  OpenAI: 1 plans | advanced-voice, gpt-4o, gpt-4o-mini, gpt-5.4, o1
+  OpenCode: 2 plans | big-pickle, glm-5, glm-5.1, kimi-k2.5, mimo-v2-pro
+  Qwen: 1 plans | qwen2.5-72b, qwen3.0, qwen3.0-turbo
+  Windsurf: 2 plans | claude-4.6-opus, claude-4.6-sonnet, command-r+, gpt-4o
+Scraper generated 20 plans
+
+[Step 2/2] Syncing results to database...
+Using container: airank-8dda1913-a4e3-4541-9bdc-ed38de5837f2-1777059537212
+============================================================
+DevAI Rank - Data Sync
+============================================================
+
+[Step 1/3] Loading data...
+  Using scraper data: 20 plans
+
+[Step 2/3] Syncing plans to database...
+  Synced 20 plans
+
+[Step 3/3] Cleaning up orphaned plans...
+  Removed 0 orphaned plans
+
+============================================================
+Sync complete!
+  - Source: scraper
+  - Plans synced: 20
+  - Total plans in DB: 32
+============================================================
+
+============================================================
+Scraper run complete - 2026-06-23T03:31:42Z
+============================================================
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-25T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/airank/scraper/focalizado.py", line 423, in <module>
+    main()
+  File "/home/ubuntu/projects/airank/scraper/focalizado.py", line 370, in main
+    plans = asyncio.run(scraper.scrape_all(urls))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/projects/airank/scraper/focalizado.py", line 266, in scrape_all
+    browser = await p.chromium.launch(headless=True)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 14547, in launch
+    await self._impl_obj.launch(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1208/chrome-linux/headless_shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Loaded .env from /home/ubuntu/projects/airank/scraper/.env
+============================================================
+AI-Rank Scraper - 2026-06-27T03:30:01Z
+============================================================
+
+[Step 1/2] Running focalizado scraper...
+============================================================
+DevAI Rank - Focalizado Scraper v2
+============================================================
+URLs: 14
+Ollama: Enabled
+Model: minimax-m2.7:cloud
+    Ollama client ready (model: minimax-m2.7:cloud)
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/airank/scraper/focalizado.py", line 423, in <module>
+    main()
+  File "/home/ubuntu/projects/airank/scraper/focalizado.py", line 370, in main
+    plans = asyncio.run(scraper.scrape_all(urls))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/projects/airank/scraper/focalizado.py", line 266, in scrape_all
+    browser = await p.chromium.launch(headless=True)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 14547, in launch
+    await self._impl_obj.launch(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1208/chrome-linux/headless_shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
